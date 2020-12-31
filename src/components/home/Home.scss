@@ -1,0 +1,122 @@
+.home-wrapper {
+  background-color: #fafafa;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    height: 50%;
+    & > div {
+      height: 100%;
+    }
+  }
+
+  .smart-phone-container img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .login-wrapper {
+    margin-left: 20px;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: white;
+    .logo {
+      font-family: "Satisfy", cursive;
+      font-weight: bold;
+      font-size: 40px;
+      margin: 35px 86px;
+    }
+    .user-login-form {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 260px;
+        height: 35px;
+        margin: 5px 0;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        padding-left: 10px;
+        background-color: #fafafa;
+      }
+    }
+    .login-btn {
+      button {
+        border: none;
+        border-radius: 3px;
+        background: #b2dffc;
+        color: white;
+        width: 275px;
+        height: 32px;
+        line-height: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+    hr {
+      border: none;
+      border-top: 1px solid;
+      color: grey;
+      font-weight: bold;
+      overflow: visible;
+      text-align: center;
+      width: 280px;
+      margin-top: 30px;
+      background-color: white;
+      &::after {
+        background: #fff;
+        content: "또는";
+        padding: 0 20px;
+        position: relative;
+        top: -10px;
+        font-size: 12px;
+      }
+    }
+    .facebook-login {
+      color: #385185;
+      font-weight: bold;
+      svg {
+        padding-right: 5px;
+        position: relative;
+        top: 1px;
+        font-size: 1.2rem;
+      }
+      padding-bottom: 20px;
+    }
+    .forgot-password {
+      font-size: 0.8rem;
+      padding-bottom: 20px;
+    }
+  }
+  .sign-up-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+    .sign-up {
+      margin-left: 5px;
+      color: #0095f6;
+      font-weight: 600;
+    }
+  }
+}
