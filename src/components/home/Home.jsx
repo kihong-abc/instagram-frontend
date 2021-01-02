@@ -3,10 +3,15 @@ import { FaFacebookSquare } from "react-icons/fa";
 import "./Home.scss";
 import LoginPhoneBg from "../../resource/images/login_smartphone_bg.png";
 
-function Home() {
+function Home(props) {
   const onClickLogin = (event) => {
     event.preventDefault();
     console.log("onClickLogin");
+  };
+
+  const onClickSignUp = (event) => {
+    event.preventDefault();
+    props.history.push("/signup");
   };
 
   const renderPhone = () => {
@@ -44,7 +49,9 @@ function Home() {
     return (
       <div className="sign-up-container">
         <span className="account">계정이 없으신가요?</span>
-        <span className="sign-up">가입하기</span>
+        <span className="sign-up" onClick={onClickSignUp}>
+          가입하기
+        </span>
       </div>
     );
   };
